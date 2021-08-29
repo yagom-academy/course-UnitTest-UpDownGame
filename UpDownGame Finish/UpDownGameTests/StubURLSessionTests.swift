@@ -15,6 +15,7 @@ class StubURLSessionTests: XCTestCase {
         sut = nil
     }
     
+    // MARK: - reset
     func test_3이라는값을_받았을때() {
         // given
         let promise = expectation(description: "")

@@ -53,7 +53,7 @@ class URLSessionTest: XCTestCase {
     
     func test_URL요청에_0에서30까지의randomValue가_들어오는지() {
         // given
-        let promise = expectation(description: "Yes")
+        let promise = expectation(description: "RandomValue is in 0 to 30")
         
         // when
         let task = sut.dataTask(with: url) { data, response, error in

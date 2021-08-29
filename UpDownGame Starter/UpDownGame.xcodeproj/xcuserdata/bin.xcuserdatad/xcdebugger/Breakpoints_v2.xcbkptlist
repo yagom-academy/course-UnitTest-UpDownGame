@@ -3,4 +3,22 @@
    uuid = "9A34BE27-50E7-4BE7-9C63-AC310403BA98"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3D85C96A-5B48-4F17-87A5-9D52E135E0BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UpDownGameTests/URLSessionTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "test_URL&#xc694;&#xccad;&#xc0c1;&#xd0dc;&#xcf54;&#xb4dc;200&#xbc88;&#xc774;_&#xb3cc;&#xc544;&#xc624;&#xb294;&#xc9c0;()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

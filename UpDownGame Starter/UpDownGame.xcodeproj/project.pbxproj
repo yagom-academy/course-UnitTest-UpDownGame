@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3417700F26D63A7C00108680 /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417700126D6268E00108680 /* StubURLSession.swift */; };
 		3417713726D7772200108680 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417713626D7772200108680 /* URLSessionProtocol.swift */; };
+		341771B826DBC61B00108680 /* URLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341771B726DBC61B00108680 /* URLSessionTests.swift */; };
 		3420B3C026D2F9DF008FA2DC /* UpDownGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */; };
 		34BF8D7226C10008002AE7D4 /* UpDownGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF8D7126C10008002AE7D4 /* UpDownGame.swift */; };
 		34BF8D7826C14EFD002AE7D4 /* HitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF8D7726C14EFD002AE7D4 /* HitResult.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		3417700126D6268E00108680 /* StubURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSession.swift; sourceTree = "<group>"; };
 		3417713626D7772200108680 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		341771B726DBC61B00108680 /* URLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTests.swift; sourceTree = "<group>"; };
 		3420B3BD26D2F9DF008FA2DC /* UpDownGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpDownGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownGameTests.swift; sourceTree = "<group>"; };
 		3420B3C126D2F9DF008FA2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */,
+				341771B726DBC61B00108680 /* URLSessionTests.swift */,
 				3420B3C126D2F9DF008FA2DC /* Info.plist */,
 			);
 			path = UpDownGameTests;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341771B826DBC61B00108680 /* URLSessionTests.swift in Sources */,
 				3420B3C026D2F9DF008FA2DC /* UpDownGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
