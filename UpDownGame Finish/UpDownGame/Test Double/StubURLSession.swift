@@ -19,12 +19,12 @@ class StubURLSession: URLSessionProtocol {
         self.dummyData = dummy
     }
 
-    func dataTask(with url: URL, completionHandler: @escaping DataTaskCompletionHandler) -> URLSessionDataTaskProtocol {
+    func dataTask(with url: URL, completionHandler: @escaping DataTaskCompletionHandler) -> URLSessionDataTask {
         return StubURLSessionDataTask(dummy: dummyData, completionHandler: completionHandler)
     }
 }
 
-class StubURLSessionDataTask: URLSessionDataTaskProtocol {
+class StubURLSessionDataTask: URLSessionDataTask {
     var dummyData: DummyData?
     
     init(dummy: DummyData?, completionHandler: DataTaskCompletionHandler?) {
@@ -32,7 +32,7 @@ class StubURLSessionDataTask: URLSessionDataTaskProtocol {
         self.dummyData?.completionHandler = completionHandler
     }
     
-    func resume() {
+    override func resume() {
         dummyData?.completion()
     }
 }
