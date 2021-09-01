@@ -16,7 +16,7 @@ class URLSessionTest: XCTestCase {
         sut = nil
     }
 
-    func test_URL요청_상태코드200번이_돌아오는지() {
+    func test_URL요청시_상태코드200번이_돌아오는지() {
         // given
         let promise = expectation(description: "StatusCode is 200")
         
@@ -36,7 +36,7 @@ class URLSessionTest: XCTestCase {
         wait(for: [promise], timeout: 10)
     }
     
-    func test_URL요청_에러가_nil인지() {
+    func test_URL요청시_에러가_nil인지() {
         // gitven
         let promise = expectation(description: "Error is nil")
         
@@ -51,7 +51,7 @@ class URLSessionTest: XCTestCase {
         wait(for: [promise], timeout: 10)
     }
     
-    func test_URL요청_0에서30까지의randomValue가_들어오는지() {
+    func test_URL요청시_0에서30까지의randomValue가_들어오는지() {
         // given
         let promise = expectation(description: "RandomValue is in 0 to 30")
         

@@ -10,7 +10,7 @@ class UpDownGame {
         self.urlSession = urlSession
     }
     
-    private func makeRandomValue(completionHandler: @escaping () -> Void) {
+    func makeRandomValue(completionHandler: @escaping () -> Void) {
         let urlString = "http://www.randomnumberapi.com/api/v1.0/random?min=0&max=30&count=1"
         guard let url = URL(string: urlString) else {
             return
