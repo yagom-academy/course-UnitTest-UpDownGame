@@ -56,6 +56,16 @@
                ReferencedContainer = "container:UpDownGame.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "341771DE26E0B20900108680"
+               BuildableName = "URLSessionTests.xctest"
+               BlueprintName = "URLSessionTests"
+               ReferencedContainer = "container:UpDownGame.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

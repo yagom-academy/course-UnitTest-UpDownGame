@@ -1,66 +1,26 @@
 
 import XCTest
-@testable import UpDownGame
 
 class UpDownGameTests: XCTestCase {
-    var sut: UpDownGame!
 
     override func setUpWithError() throws {
-        try super.setUpWithError()
-        sut = UpDownGame()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {
-        try super.tearDownWithError()
-        sut = nil
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    // MARK: - compareVlaue
-    func test_hitNumber가_randomValue보다_작을때() {
-        // given
-        let hitNumber = 10
-        sut.randomValue = 5
-        
-        // when
-        let result = sut.compareValue(with: hitNumber)
-        
-        // then
-        XCTAssertEqual(result, .Down)
+    func testExample() throws {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-    
-    func test_hitNumber가_randomValue보다_클때() {
-        // given
-        let hitNumber = 5
-        sut.randomValue = 10
-        
-        // when
-        let result = sut.compareValue(with: hitNumber)
-        
-        // then
-        XCTAssertEqual(result, .Up)
+
+    func testPerformanceExample() throws {
+        // This is an example of a performance test case.
+        measure {
+            // Put the code you want to measure the time of here.
+        }
     }
-    
-    func test_hitNumber가_randomValue과_같을때() {
-        // given
-        let hitNumber = 10
-        sut.randomValue = 10
-        
-        // when
-        let result = sut.compareValue(with: hitNumber)
-        
-        XCTAssertEqual(result, .Win)
-    }
-    
-    func test_tryCount가5이면서_hitNumber가_randomValue과_다를때() {
-        // given
-        let hitNumber = 7
-        sut.randomValue = 10
-        sut.tryCount = 5
-        
-        // when
-        let result = sut.compareValue(with: hitNumber)
-        
-        // then
-        XCTAssertEqual(result, .Lose)
-    }
+
 }

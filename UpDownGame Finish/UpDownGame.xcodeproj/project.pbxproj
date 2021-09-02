@@ -23,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		341771E426E0B20900108680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34E6E04124A8E47B004E8F3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34E6E04824A8E47B004E8F3A;
+			remoteInfo = UpDownGame;
+		};
 		3420B3C226D2F9DF008FA2DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34E6E04124A8E47B004E8F3A /* Project object */;
@@ -37,6 +44,8 @@
 		3417702326D6691500108680 /* URLSessionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTest.swift; sourceTree = "<group>"; };
 		3417702726D67AA000108680 /* StubURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSessionTests.swift; sourceTree = "<group>"; };
 		3417713626D7772200108680 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		341771DF26E0B20900108680 /* URLSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLSessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		341771E326E0B20900108680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3420B3BD26D2F9DF008FA2DC /* UpDownGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpDownGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownGameTests.swift; sourceTree = "<group>"; };
 		3420B3C126D2F9DF008FA2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		341771DC26E0B20900108680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3420B3BA26D2F9DF008FA2DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,11 +95,19 @@
 			path = "Test Double";
 			sourceTree = "<group>";
 		};
+		341771E026E0B20900108680 /* URLSessionTests */ = {
+			isa = PBXGroup;
+			children = (
+				3417702326D6691500108680 /* URLSessionTest.swift */,
+				341771E326E0B20900108680 /* Info.plist */,
+			);
+			path = URLSessionTests;
+			sourceTree = "<group>";
+		};
 		3420B3BE26D2F9DF008FA2DC /* UpDownGameTests */ = {
 			isa = PBXGroup;
 			children = (
 				3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */,
-				3417702326D6691500108680 /* URLSessionTest.swift */,
 				3417702726D67AA000108680 /* StubURLSessionTests.swift */,
 				3420B3C126D2F9DF008FA2DC /* Info.plist */,
 			);
@@ -95,6 +119,7 @@
 			children = (
 				34E6E04B24A8E47B004E8F3A /* UpDownGame */,
 				3420B3BE26D2F9DF008FA2DC /* UpDownGameTests */,
+				341771E026E0B20900108680 /* URLSessionTests */,
 				34E6E04A24A8E47B004E8F3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,6 +129,7 @@
 			children = (
 				34E6E04924A8E47B004E8F3A /* UpDownGame.app */,
 				3420B3BD26D2F9DF008FA2DC /* UpDownGameTests.xctest */,
+				341771DF26E0B20900108680 /* URLSessionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +154,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		341771DE26E0B20900108680 /* URLSessionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341771E826E0B20900108680 /* Build configuration list for PBXNativeTarget "URLSessionTests" */;
+			buildPhases = (
+				341771DB26E0B20900108680 /* Sources */,
+				341771DC26E0B20900108680 /* Frameworks */,
+				341771DD26E0B20900108680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				341771E526E0B20900108680 /* PBXTargetDependency */,
+			);
+			name = URLSessionTests;
+			productName = URLSessionTests;
+			productReference = 341771DF26E0B20900108680 /* URLSessionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3420B3BC26D2F9DF008FA2DC /* UpDownGameTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3420B3C626D2F9DF008FA2DC /* Build configuration list for PBXNativeTarget "UpDownGameTests" */;
@@ -173,6 +217,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Bin;
 				TargetAttributes = {
+					341771DE26E0B20900108680 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 34E6E04824A8E47B004E8F3A;
+					};
 					3420B3BC26D2F9DF008FA2DC = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 34E6E04824A8E47B004E8F3A;
@@ -197,11 +245,19 @@
 			targets = (
 				34E6E04824A8E47B004E8F3A /* UpDownGame */,
 				3420B3BC26D2F9DF008FA2DC /* UpDownGameTests */,
+				341771DE26E0B20900108680 /* URLSessionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		341771DD26E0B20900108680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3420B3BB26D2F9DF008FA2DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +278,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		341771DB26E0B20900108680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3420B3B926D2F9DF008FA2DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +312,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		341771E526E0B20900108680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34E6E04824A8E47B004E8F3A /* UpDownGame */;
+			targetProxy = 341771E426E0B20900108680 /* PBXContainerItemProxy */;
+		};
 		3420B3C326D2F9DF008FA2DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 34E6E04824A8E47B004E8F3A /* UpDownGame */;
@@ -276,6 +344,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		341771E626E0B20900108680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = URLSessionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odongnamu.URLSessionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpDownGame.app/UpDownGame";
+			};
+			name = Debug;
+		};
+		341771E726E0B20900108680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = URLSessionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odongnamu.URLSessionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UpDownGame.app/UpDownGame";
+			};
+			name = Release;
+		};
 		3420B3C426D2F9DF008FA2DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -468,6 +578,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		341771E826E0B20900108680 /* Build configuration list for PBXNativeTarget "URLSessionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341771E626E0B20900108680 /* Debug */,
+				341771E726E0B20900108680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3420B3C626D2F9DF008FA2DC /* Build configuration list for PBXNativeTarget "UpDownGameTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
