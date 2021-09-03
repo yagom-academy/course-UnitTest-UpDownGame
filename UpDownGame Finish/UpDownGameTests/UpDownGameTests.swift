@@ -67,12 +67,14 @@ class UpDownGameTests: XCTestCase {
 
 // MARK: - makeRandomValue
 extension UpDownGameTests {
-    func test_makeRandomValue호출시_randomValue를_잘설정해주는지() {
+    func test_makeRandomValue호출시_randomValue를_0에서30까지숫자로설정해주는지() {
         // given
         let promise = expectation(description: "It makes random value")
+        sut.randomValue = 50 // 기본값이 0~30에 포함되면 무조건 테스트에 통과하므로 범위에서 벗어난 값을 할당
         
         // when
         sut.makeRandomValue {
+            // then
             XCTAssertGreaterThanOrEqual(self.sut.randomValue, 0)
             XCTAssertLessThanOrEqual(self.sut.randomValue, 30)
             promise.fulfill()
@@ -87,9 +89,10 @@ extension UpDownGameTests {
     func test_reset호출시_tryCount가0이되는지() {
         // given
         let promise = expectation(description: "It makes tryCount zero")
+        sut.tryCount = 4 // 기본값인 0으로 테스트를 진행하면 무조건 테스트에 통과하므로 0이 아닌 값을 할당
         
         // when
-        sut.makeRandomValue {
+        sut.reset {
             XCTAssertEqual(self.sut.tryCount, 0)
             promise.fulfill()
         }

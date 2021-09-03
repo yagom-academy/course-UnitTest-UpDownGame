@@ -16,7 +16,7 @@ class StubURLSessionTests: XCTestCase {
     }
     
     // MARK: - reset
-    func test_URL요청으로_3이라는값을_받아올때() {
+    func test_URL요청으로_3이라는값을받아올때_randomValue값설정이잘되는지() {
         // given
         let promise = expectation(description: "")
         let url = URL(string: "http://www.randomnumberapi.com/api/v1.0/random?min=1&max=30&count=1")!
@@ -37,7 +37,7 @@ class StubURLSessionTests: XCTestCase {
         wait(for: [promise], timeout: 10)
     }
     
-    func test_URL요청으로_0부터30까지의random값을_받아올때() {
+    func test_URL요청으로_0부터30까지의random값을받아올때_randomValue값설정이잘되는지() {
         // given
         let promise = expectation(description: "")
         let randomValue = Int.random(in: 0...30)
