@@ -19,8 +19,8 @@ class UpDownGameTests: XCTestCase {
         sut = nil
     }
 
-    // MARK: - compareVlaue
-    func test_compareVlaue호출시_hitNumber가randomValue보다작을때_Down반환하는지() {
+    // MARK: - compareValue
+    func test_compareValue호출시_hitNumber가randomValue보다작을때_Down반환하는지() {
         // given
         let hitNumber = 10
         sut.randomValue = 5
@@ -32,7 +32,7 @@ class UpDownGameTests: XCTestCase {
         XCTAssertEqual(result, .Down)
     }
     
-    func test_compareVlaue호출시_hitNumber가randomValue보다클때_Up반환하는지() {
+    func test_compareValue호출시_hitNumber가randomValue보다클때_Up반환하는지() {
         // given
         let hitNumber = 5
         sut.randomValue = 10
@@ -44,7 +44,7 @@ class UpDownGameTests: XCTestCase {
         XCTAssertEqual(result, .Up)
     }
     
-    func test_compareVlaue호출시_hitNumber가randomValue과같을때_Win반환하는지() {
+    func test_compareValue호출시_hitNumber가randomValue와같을때_Win반환하는지() {
         // given
         let hitNumber = 10
         sut.randomValue = 10
@@ -55,7 +55,7 @@ class UpDownGameTests: XCTestCase {
         XCTAssertEqual(result, .Win)
     }
     
-    func test_compareVlaue호출시_tryCount가5이면서_hitNumber가randomValue과다를때_Lose반환하는지() {
+    func test_compareValue호출시_tryCount가5이면서_hitNumber가randomValue와다를때_Lose반환하는지() {
         // given
         let hitNumber = 7
         sut.randomValue = 10
