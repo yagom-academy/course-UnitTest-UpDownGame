@@ -33,7 +33,7 @@ class UpDownGame {
                 guard let newValue = try JSONDecoder().decode([Int].self, from: data).first else {
                     return
                 }
-
+                
                 self.randomValue = newValue
                 completionHandler()
             } catch {

@@ -79,5 +79,3 @@ class URLSessionTest: XCTestCase {
         wait(for: [promise], timeout: 10)
     }
 }
-
-

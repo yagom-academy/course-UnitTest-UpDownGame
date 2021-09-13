@@ -60,7 +60,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "341771DE26E0B20900108680"
+               BlueprintIdentifier = "341771F426E0B27A00108680"
                BuildableName = "URLSessionTests.xctest"
                BlueprintName = "URLSessionTests"
                ReferencedContainer = "container:UpDownGame.xcodeproj">

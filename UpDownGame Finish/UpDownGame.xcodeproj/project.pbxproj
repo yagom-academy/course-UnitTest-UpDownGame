@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3417700F26D63A7C00108680 /* StubURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417700126D6268E00108680 /* StubURLSession.swift */; };
-		3417702426D6691500108680 /* URLSessionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417702326D6691500108680 /* URLSessionTest.swift */; };
-		3417702826D67AA000108680 /* StubURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417702726D67AA000108680 /* StubURLSessionTests.swift */; };
 		3417713726D7772200108680 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3417713626D7772200108680 /* URLSessionProtocol.swift */; };
+		341771F826E0B27A00108680 /* URLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341771F726E0B27A00108680 /* URLSessionTests.swift */; };
+		341772D526EED10B00108680 /* StubURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341772D426EED10B00108680 /* StubURLSessionTests.swift */; };
 		3420B3C026D2F9DF008FA2DC /* UpDownGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */; };
 		34BF8D7226C10008002AE7D4 /* UpDownGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF8D7126C10008002AE7D4 /* UpDownGame.swift */; };
 		34BF8D7826C14EFD002AE7D4 /* HitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF8D7726C14EFD002AE7D4 /* HitResult.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		341771E426E0B20900108680 /* PBXContainerItemProxy */ = {
+		341771FA26E0B27A00108680 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 34E6E04124A8E47B004E8F3A /* Project object */;
 			proxyType = 1;
@@ -41,11 +41,11 @@
 
 /* Begin PBXFileReference section */
 		3417700126D6268E00108680 /* StubURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSession.swift; sourceTree = "<group>"; };
-		3417702326D6691500108680 /* URLSessionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTest.swift; sourceTree = "<group>"; };
-		3417702726D67AA000108680 /* StubURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSessionTests.swift; sourceTree = "<group>"; };
 		3417713626D7772200108680 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
-		341771DF26E0B20900108680 /* URLSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLSessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		341771E326E0B20900108680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341771F526E0B27A00108680 /* URLSessionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URLSessionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		341771F726E0B27A00108680 /* URLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTests.swift; sourceTree = "<group>"; };
+		341771F926E0B27A00108680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341772D426EED10B00108680 /* StubURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubURLSessionTests.swift; sourceTree = "<group>"; };
 		3420B3BD26D2F9DF008FA2DC /* UpDownGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpDownGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownGameTests.swift; sourceTree = "<group>"; };
 		3420B3C126D2F9DF008FA2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		341771DC26E0B20900108680 /* Frameworks */ = {
+		341771F226E0B27A00108680 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,11 +95,11 @@
 			path = "Test Double";
 			sourceTree = "<group>";
 		};
-		341771E026E0B20900108680 /* URLSessionTests */ = {
+		341771F626E0B27A00108680 /* URLSessionTests */ = {
 			isa = PBXGroup;
 			children = (
-				3417702326D6691500108680 /* URLSessionTest.swift */,
-				341771E326E0B20900108680 /* Info.plist */,
+				341771F726E0B27A00108680 /* URLSessionTests.swift */,
+				341771F926E0B27A00108680 /* Info.plist */,
 			);
 			path = URLSessionTests;
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				3420B3BF26D2F9DF008FA2DC /* UpDownGameTests.swift */,
-				3417702726D67AA000108680 /* StubURLSessionTests.swift */,
+				341772D426EED10B00108680 /* StubURLSessionTests.swift */,
 				3420B3C126D2F9DF008FA2DC /* Info.plist */,
 			);
 			path = UpDownGameTests;
@@ -119,7 +119,7 @@
 			children = (
 				34E6E04B24A8E47B004E8F3A /* UpDownGame */,
 				3420B3BE26D2F9DF008FA2DC /* UpDownGameTests */,
-				341771E026E0B20900108680 /* URLSessionTests */,
+				341771F626E0B27A00108680 /* URLSessionTests */,
 				34E6E04A24A8E47B004E8F3A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			children = (
 				34E6E04924A8E47B004E8F3A /* UpDownGame.app */,
 				3420B3BD26D2F9DF008FA2DC /* UpDownGameTests.xctest */,
-				341771DF26E0B20900108680 /* URLSessionTests.xctest */,
+				341771F526E0B27A00108680 /* URLSessionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,22 +154,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		341771DE26E0B20900108680 /* URLSessionTests */ = {
+		341771F426E0B27A00108680 /* URLSessionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 341771E826E0B20900108680 /* Build configuration list for PBXNativeTarget "URLSessionTests" */;
+			buildConfigurationList = 341771FC26E0B27A00108680 /* Build configuration list for PBXNativeTarget "URLSessionTests" */;
 			buildPhases = (
-				341771DB26E0B20900108680 /* Sources */,
-				341771DC26E0B20900108680 /* Frameworks */,
-				341771DD26E0B20900108680 /* Resources */,
+				341771F126E0B27A00108680 /* Sources */,
+				341771F226E0B27A00108680 /* Frameworks */,
+				341771F326E0B27A00108680 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				341771E526E0B20900108680 /* PBXTargetDependency */,
+				341771FB26E0B27A00108680 /* PBXTargetDependency */,
 			);
 			name = URLSessionTests;
 			productName = URLSessionTests;
-			productReference = 341771DF26E0B20900108680 /* URLSessionTests.xctest */;
+			productReference = 341771F526E0B27A00108680 /* URLSessionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		3420B3BC26D2F9DF008FA2DC /* UpDownGameTests */ = {
@@ -217,7 +217,7 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = Bin;
 				TargetAttributes = {
-					341771DE26E0B20900108680 = {
+					341771F426E0B27A00108680 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 34E6E04824A8E47B004E8F3A;
 					};
@@ -245,13 +245,13 @@
 			targets = (
 				34E6E04824A8E47B004E8F3A /* UpDownGame */,
 				3420B3BC26D2F9DF008FA2DC /* UpDownGameTests */,
-				341771DE26E0B20900108680 /* URLSessionTests */,
+				341771F426E0B27A00108680 /* URLSessionTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		341771DD26E0B20900108680 /* Resources */ = {
+		341771F326E0B27A00108680 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,10 +278,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		341771DB26E0B20900108680 /* Sources */ = {
+		341771F126E0B27A00108680 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341771F826E0B27A00108680 /* URLSessionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3417702826D67AA000108680 /* StubURLSessionTests.swift in Sources */,
-				3417702426D6691500108680 /* URLSessionTest.swift in Sources */,
+				341772D526EED10B00108680 /* StubURLSessionTests.swift in Sources */,
 				3420B3C026D2F9DF008FA2DC /* UpDownGameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,10 +312,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		341771E526E0B20900108680 /* PBXTargetDependency */ = {
+		341771FB26E0B27A00108680 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 34E6E04824A8E47B004E8F3A /* UpDownGame */;
-			targetProxy = 341771E426E0B20900108680 /* PBXContainerItemProxy */;
+			targetProxy = 341771FA26E0B27A00108680 /* PBXContainerItemProxy */;
 		};
 		3420B3C326D2F9DF008FA2DC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -344,14 +344,14 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		341771E626E0B20900108680 /* Debug */ = {
+		341771FD26E0B27A00108680 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = URLSessionTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,14 +365,14 @@
 			};
 			name = Debug;
 		};
-		341771E726E0B20900108680 /* Release */ = {
+		341771FE26E0B27A00108680 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = URLSessionTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -393,7 +393,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UpDownGameTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,7 +414,7 @@
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UpDownGameTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,13 +478,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -533,12 +534,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -578,11 +580,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		341771E826E0B20900108680 /* Build configuration list for PBXNativeTarget "URLSessionTests" */ = {
+		341771FC26E0B27A00108680 /* Build configuration list for PBXNativeTarget "URLSessionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				341771E626E0B20900108680 /* Debug */,
-				341771E726E0B20900108680 /* Release */,
+				341771FD26E0B27A00108680 /* Debug */,
+				341771FE26E0B27A00108680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
