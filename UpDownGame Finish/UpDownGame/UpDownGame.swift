@@ -52,10 +52,10 @@ class UpDownGame {
     }
     
     func compareValue(with hitNumber: Int) -> HitResult {
-        if randomValue == hitNumber {
+        if tryCount >= 5 {
+           return .Lose
+        } else if randomValue == hitNumber {
             return .Win
-        } else if tryCount >= 5 {
-            return .Lose
         } else if hitNumber > randomValue {
             return .Down
         } else {
